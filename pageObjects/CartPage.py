@@ -1,3 +1,5 @@
+# This file contains the Page Object Model (POM) implementation for the Cart Detail Page.
+
 import time
 
 from selenium.webdriver.common.by import By

@@ -1,3 +1,4 @@
+# This file contains the Page Object Model (POM) implementation for the Home Page.
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -9,8 +10,7 @@ class HomePage:
         self.driver = driver
 
     men_link = (By.LINK_TEXT, 'MEN')
-    casual_tshirt_link = (
-    By.XPATH, '//*[@id="desktop-header-cnt"]/div[2]/nav/div/div[1]/div/div/div/div/li[1]/ul/li[2]/a')
+    casual_tshirt_link = (By.XPATH, '//*[@id="desktop-header-cnt"]/div[2]/nav/div/div[1]/div/div/div/div/li[1]/ul/li[2]/a')
     cart_icon = (By.XPATH, '//*[@id="desktop-header-cnt"]/div[2]/div[2]/a[2]/span[1]')
     first_product = (By.XPATH, "(//li[contains(@class, 'product-base')])[2]")
 
