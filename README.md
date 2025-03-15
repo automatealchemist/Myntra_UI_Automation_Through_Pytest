@@ -49,6 +49,7 @@ Myntra_UI_Automation_Through_Pytest/
 - Add more test scenarios for better coverage.
 - Integrate with CI/CD pipelines like **Jenkins** or **GitHub Actions**.
 - Improve reporting using **Allure Reports**.
+- **Handle Flakiness**: Introduce retry mechanisms or rerun failed tests to improve test reliability.
 
 This project serves as a starting point for automating UI flows using Pytest and Selenium. Contributions and improvements are always welcome!
 
