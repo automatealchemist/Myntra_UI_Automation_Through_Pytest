@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 
@@ -11,6 +13,7 @@ class CartPage:
     cart_product_size = (By.XPATH, '//*[@id="cartItemsList"]/div[1]/div/div/div[2]/div[2]/div/div[3]/div/div[1]/span')
 
     def get_cart_details(self):
+        time.sleep(5)
         title = self.driver.find_element(*self.cart_product_title).text
         price = self.driver.find_element(*self.cart_product_price).text
         size = self.driver.find_element(*self.cart_product_size).text

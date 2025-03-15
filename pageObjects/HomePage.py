@@ -12,7 +12,7 @@ class HomePage:
     casual_tshirt_link = (
     By.XPATH, '//*[@id="desktop-header-cnt"]/div[2]/nav/div/div[1]/div/div/div/div/li[1]/ul/li[2]/a')
     cart_icon = (By.XPATH, '//*[@id="desktop-header-cnt"]/div[2]/div[2]/a[2]/span[1]')
-    first_product = (By.XPATH, "(//li[contains(@class, 'product-base')])[1]")
+    first_product = (By.XPATH, "(//li[contains(@class, 'product-base')])[2]")
 
     def hover_on_men_menu(self, action_chains):
         men_element = self.driver.find_element(*self.men_link)

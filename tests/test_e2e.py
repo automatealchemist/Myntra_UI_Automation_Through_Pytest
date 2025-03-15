@@ -43,11 +43,14 @@ class TestEndToEnd(BaseClass):
         homepage.go_to_cart()
         cart_details = cart_page.get_cart_details()
         item_price = product_details["price"].strip("₹")
-        cart_price = cart_details["price"] # your string here
+        cart_price = cart_details["price"]
+        cart_size = cart_details["size"]# your string here
 
 
         cart_price = re.sub(',','', cart_price)
-        cart_size = cart_details["size"].strip("Size: ")
+        #cart_size = re.sub(' Size:', '', cart_price)
+        cart_size = re.sub('Size: ', '', cart_size)
+
 
         if product_details["title"]== cart_details["title"]:
             print("T-shirt title matched.")
